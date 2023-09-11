@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+    <title>Imenik</title>
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <nav class="navbarm">
+        <ul class="navbar-navm">
+            <li class="nav-item">
+                <a href="/" class="nav-linkm">
+                <lord-icon class="icon"
+                    src="../icon/book.json"
+                    target="a.nav-linkm"
+                    trigger="loop-on-hover"
+                    delay="500"
+                    colors="primary:#ffffff,secondary:#ffffff"
+                    stroke="105"
+                    state="hover">
+                </lord-icon>
+                <span class="link-text">Tablica kontakta</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="sites/newContact.html" class="nav-linkm">
+                <lord-icon class="icon"
+                    src="../icon/addReservation.json"
+                    target="a.nav-linkm"
+                    trigger="loop-on-hover"
+                    delay="500"
+                    colors="primary:#ffffff">
+                </lord-icon>
+                <span class="link-text">Novi unos</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+        <div class="title">Kontakti</div>
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr class="tr-first">
+                        <th>Ime</th>
+                        <th>Prezime</th>
+                        <th>Dat. Rođenja</th>
+                        <th>Ulica</th>
+                        <th>Poštanski broj</th>
+                        <th>Broj telefona</th>
+                        <th>Akcije</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <!-- <tr>
+                        <td>Marko</td>
+                        <td>Marković</td>
+                        <td>01.01.2000</td>
+                        <td>Ulica 1</td>
+                        <td>10000</td>
+                        <td>091 1234567</td>
+                        <td>
+                            <a href="" class="btn">
+                                <lord-icon class="row-icon"
+                                    src="../icon/delete.json"
+                                    target="a.btn"
+                                    trigger="loop-on-hover"
+                                    delay="500"
+                                    colors="primary:#5B5B5B">
+                                </lord-icon>
+                            </a>
+                            <a href="" class="btn">
+                                <lord-icon class="row-icon"
+                                    src="../icon/edit.json"
+                                    target="a.btn"
+                                    trigger="loop-on-hover"
+                                    delay="500"
+                                    colors="primary:#F89B3E">
+                                </lord-icon>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marko</td>
+                        <td>Marković</td>
+                        <td>01.01.2000</td>
+                        <td>Ulica 1</td>
+                        <td>10000</td>
+                        <td>091 1234567</td>
+                        <td>
+                            <button class="btn" onclick="popup()">
+                                <lord-icon class="row-icon"
+                                    src="../icon/delete.json"
+                                    target="a.btn"
+                                    trigger="loop-on-hover"
+                                    delay="500"
+                                    colors="primary:#5B5B5B">
+                                </lord-icon>
+                            </button>
+                            <a href="#" class="btn">
+                                <lord-icon class="row-icon"
+                                    src="../icon/edit.json"
+                                    target="a.btn"
+                                    trigger="loop-on-hover"
+                                    delay="500"
+                                    colors="primary:#F89B3E">
+                                </lord-icon>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marko</td>
+                        <td>Marković</td>
+                        <td>01.01.2000</td>
+                        <td>Ulica 1</td>
+                        <td>10000</td>
+                        <td>091 1234567</td>
+                        <td>
+                            <a href="#" class="btn">
+                                <lord-icon class="row-icon"
+                                    src="../icon/delete.json"
+                                    target="a.btn"
+                                    trigger="loop-on-hover"
+                                    delay="500"
+                                    colors="primary:#5B5B5B">
+                                </lord-icon>
+                            </a>
+                            <a href="#" class="btn">
+                                <lord-icon class="row-icon"
+                                    src="../icon/edit.json"
+                                    target="a.btn"
+                                    trigger="loop-on-hover"
+                                    delay="500"
+                                    colors="primary:#F89B3E">
+                                </lord-icon>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marko</td>
+                        <td>Marković</td>
+                        <td>01.01.2000</td>
+                        <td>Ulica 1</td>
+                        <td>10000</td>
+                        <td>091 1234567</td>
+                        <td>
+                            <a href="#" class="btn">
+                                <lord-icon class="row-icon"
+                                    src="../icon/delete.json"
+                                    target="a.btn"
+                                    trigger="loop-on-hover"
+                                    delay="500"
+                                    colors="primary:#5B5B5B">
+                                </lord-icon>
+                            </a>
+                            <a href="#" class="btn">
+                                <lord-icon class="row-icon"
+                                    src="../icon/edit.json"
+                                    target="a.btn"
+                                    trigger="loop-on-hover"
+                                    delay="500"
+                                    colors="primary:#F89B3E">
+                                </lord-icon>
+                            </a>
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
+            TODO: <br>
+            - kada se dogodi error onda dode popup <br>
+        </div>
+
+        <!-- <div class="popup" id="popup">
+            <div class="popup-title">Potvrdi brisanje kontakta</div>
+            <div class="popup-button-container">
+                <button class="btn-orange">Obriši</button>
+                <button class="btn-gray">Odustani</button>
+            </div>
+        </div> -->
+</body>
+</html>

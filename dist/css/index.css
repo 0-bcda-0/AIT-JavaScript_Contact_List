@@ -1,0 +1,342 @@
+.btn-orange {
+  background-color: #f5a962;
+  color: #ececec;
+  border: none;
+  border-radius: 100px;
+  padding: 10px 20px 10px 20px;
+  margin: 0 10px 0 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn-gray {
+  background-color: gray;
+  color: #ececec;
+  border: none;
+  border-radius: 100px;
+  padding: 10px 20px 10px 20px;
+  margin: 0 10px 0 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 40%;
+  left: calc(50% - 250px);
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.popup-title {
+  font-size: 30px;
+  color: #5B5B5B;
+  margin-bottom: 20px;
+}
+
+.popup-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbarm {
+  position: fixed;
+  background-color: #d88f8c;
+  border-radius: 25px;
+  transition: width 600ms ease;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.navbar-navm {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  z-index: 2;
+}
+
+.nav-item {
+  width: 100%;
+}
+
+/* Hardcode centriranje ikona */
+.icon {
+  margin-left: 1rem;
+  width: 48px;
+  height: 48px;
+}
+
+.nav-linkm {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: #ececec;
+  text-decoration: none;
+  filter: grayscale(100%) opacity(1);
+  transition: 600ms;
+}
+.nav-linkm:hover {
+  filter: grayscale(0%) opacity(1);
+  background: #f5a962;
+  border-left: 4px solid #ececec;
+}
+
+.nav-linkm-logo {
+  filter: grayscale(0%) opacity(1) !important;
+}
+
+.link-text {
+  display: none;
+  margin-left: 1rem;
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  .navbarm {
+    bottom: 1.5rem;
+    width: 100vw;
+    height: 3rem;
+    padding: 0;
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 100px;
+  }
+  .nav-linkm {
+    height: 3rem;
+  }
+  .logo {
+    display: none;
+  }
+  .navbar-navm {
+    flex-direction: row;
+  }
+  .nav-linkm {
+    justify-content: center;
+  }
+  main {
+    margin: 0 !important;
+  }
+  .bottom {
+    margin-top: 0;
+  }
+  .icon {
+    margin-left: 0rem;
+    width: 30px;
+    height: 30px;
+  }
+}
+/* Large screens */
+@media only screen and (min-width: 600px) {
+  .navbarm {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+  .navbarm:hover {
+    width: 16rem;
+  }
+  .navbarm:hover .link-text {
+    display: inline;
+  }
+  .navbarm:hover .logo img {
+    margin-left: 11rem;
+  }
+  .navbarm:hover .logo-text {
+    left: 0px;
+  }
+}
+.btn-orange {
+  background-color: #f5a962;
+  color: #ececec;
+  border: none;
+  border-radius: 100px;
+  padding: 10px 20px 10px 20px;
+  margin: 0 10px 0 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn-gray {
+  background-color: gray;
+  color: #ececec;
+  border: none;
+  border-radius: 100px;
+  padding: 10px 20px 10px 20px;
+  margin: 0 10px 0 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 40%;
+  left: calc(50% - 250px);
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.popup-title {
+  font-size: 30px;
+  color: #5B5B5B;
+  margin-bottom: 20px;
+}
+
+.popup-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+:root {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/back.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url("../img/back-moba.svg");
+  }
+}
+.title {
+  margin-left: 10%;
+  margin-top: 50px;
+  font-size: 40px;
+  color: #ececec;
+  width: 200px;
+}
+
+.container {
+  margin-left: 10%;
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 25px;
+  padding: 40px;
+  width: 80%;
+}
+
+table {
+  width: 100%;
+  align-items: center;
+  border-collapse: collapse;
+}
+
+.tr-first {
+  background-color: transparent !important;
+}
+
+td {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+td:first-child {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+td:last-child {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+th, td {
+  width: 120px;
+  text-align: center;
+  color: #5B5B5B;
+  margin-top: 10px;
+}
+
+.row-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0px 15px 0 15px;
+  color: cornflowerblue;
+}
+
+.highlight {
+  background-color: rgba(216, 143, 140, 0.5);
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    margin-left: 20px;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  table {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%; /* Adjust the height as needed */
+    overflow: auto;
+    justify-content: start;
+    align-items: start;
+  }
+  tr {
+    display: block;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-right: 10px;
+    border-radius: 20px;
+  }
+  th, td {
+    width: 120px;
+    display: block;
+    margin-top: 30px;
+    background-color: transparent;
+  }
+  tbody, thead {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 0;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

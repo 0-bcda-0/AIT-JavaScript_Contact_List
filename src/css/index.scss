@@ -1,0 +1,106 @@
+@import "_nav.scss";
+@import "_variables.scss";
+@import "_background.scss";
+
+.title{
+    margin-left: 10%;
+    margin-top: 50px;
+    font-size: 40px;
+    color: $white-text;
+    width: 200px;
+}
+
+.container{
+    margin-left: 10%;
+    margin-top: 50px;
+    background-color: $transparent;
+    border-radius: 25px;
+    padding: 40px;
+    width: 80%;
+}
+
+table{
+    width: 100%;
+    align-items: center;
+    border-collapse: collapse;
+}
+
+.tr-first{
+    background-color: transparent !important;
+}
+
+td{
+    background-color: $transparent;
+}
+
+td:first-child{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+td:last-child{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+th, td{
+    width: 120px;
+    text-align: center;
+    color: $black-text;
+    margin-top: 10px;
+}
+
+.row-icon{
+    width: 30px;
+    height: 30px;
+    margin: 0px 15px 0 15px;
+    color: cornflowerblue;
+}
+
+.highlight{
+    background-color: rgba($color: #d88f8c, $alpha: 0.5);
+}
+
+// ------------------ RESPONSIVE ------------------
+
+@media only screen and (max-width: 600px) {
+    .title{
+        margin-left: 20px;
+    }
+    .container{
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    table{
+        display: flex;
+        flex-direction: row;
+        max-width: 100%; /* Adjust the height as needed */
+        overflow: auto;
+        justify-content: start;
+        align-items: start;
+    }
+
+    tr{
+        display: block;
+        float: left;
+        background-color: $transparent;
+        margin-right: 10px;
+        border-radius: 20px;
+    }
+
+    th, td{
+        width: 120px;
+        display: block;
+        margin-top: 30px;
+        background-color: transparent;
+    }
+
+    tbody, thead{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        margin-top: 0;
+    }
+}

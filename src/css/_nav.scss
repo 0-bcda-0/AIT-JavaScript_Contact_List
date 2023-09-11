@@ -1,0 +1,129 @@
+@import "_variables.scss";
+
+.navbarm {
+    position: fixed;
+    background-color: $pastel-red;
+    border-radius: 25px;
+    transition: width 600ms ease;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.navbar-navm {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    z-index: 2;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+/* Hardcode centriranje ikona */
+.icon{
+    margin-left: 1rem;
+    width: 48px;
+    height: 48px;
+}
+
+.nav-linkm {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: $white-text;
+    text-decoration: none;
+    filter: grayscale(100%) opacity(1);
+    transition: 600ms;
+
+    &:hover {
+        filter: grayscale(0%) opacity(1);
+        background: $orange;
+        border-left: 4px solid $white-text;
+    }
+}
+
+.nav-linkm-logo
+{
+filter: grayscale(0%) opacity(1) !important;
+}
+
+.link-text {
+display: none;
+margin-left: 1rem;
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+.navbarm {
+    bottom: 1.5rem;
+    width: 100vw;
+    height: 3rem;
+    padding: 0;
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 100px;
+}
+
+.nav-linkm {
+    height: 3rem;
+}
+
+.logo {
+    display: none;
+}
+
+.navbar-navm {
+    flex-direction: row;
+}
+
+.nav-linkm {
+    justify-content: center;
+}
+
+main {
+    margin: 0 !important;
+}
+
+.bottom{
+    margin-top: 0;
+}
+
+.icon{
+    margin-left: 0rem;
+    width: 30px;
+    height: 30px;
+}
+}
+
+/* Large screens */
+@media only screen and (min-width: 600px) {
+.navbarm {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+}
+
+.navbarm:hover {
+    width: 16rem;
+}
+
+.navbarm:hover .link-text {
+    display: inline;
+}
+
+.navbarm:hover .logo img
+{
+    margin-left: 11rem;
+}
+
+.navbarm:hover .logo-text
+{
+    left: 0px;
+}
+}
+

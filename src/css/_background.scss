@@ -1,0 +1,35 @@
+:root{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/back.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+// remove any style from button
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+    body{
+        background-image: url('../img/back-moba.svg');
+    }
+}

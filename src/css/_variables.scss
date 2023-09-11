@@ -1,0 +1,57 @@
+$pastel-red: #d88f8c;
+$white-text: #ececec;
+$black-text: #5B5B5B;
+$orange: #f5a962;
+$transparent: rgba(255, 255, 255, 0.4);
+
+.btn-orange{
+    background-color: $orange;
+    color: $white-text;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 20px 10px 20px;
+    margin: 0 10px 0 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-gray{
+    background-color: gray;
+    color: $white-text;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 20px 10px 20px;
+    margin: 0 10px 0 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+// ------------------ POPUP ------------------
+.popup{
+    position: fixed;
+    top: 40%;
+    left: calc(50% - 250px);
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    // display: none;
+}
+
+.popup-title{
+    font-size: 30px;
+    color: $black-text;
+    margin-bottom: 20px;
+}
+
+.popup-button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
