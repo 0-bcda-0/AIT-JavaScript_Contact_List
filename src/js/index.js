@@ -83,6 +83,19 @@ document.addEventListener("DOMContentLoaded", () => {
         const dateOfBirth = "#dateOfBirth"
         SaveContact.limitDate(dateOfBirth);
 
+        // Limiting input length on load
+        window.addEventListener("load", function () {
+            let phoneNumber = document.getElementById("phoneNumber");
+            phoneNumber.addEventListener("input", () => {
+                SaveContact.limitInputLength(phoneNumber);
+            });
+
+            let postalCode = document.getElementById("postalCode");
+            postalCode.addEventListener("input", () => {
+                SaveContact.limitInputLength(postalCode);
+            });
+        });
+
         //* Save contact
         document.querySelector("#contactForm").addEventListener("submit", (e) => {
             e.preventDefault();

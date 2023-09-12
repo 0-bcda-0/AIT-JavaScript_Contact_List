@@ -49,7 +49,7 @@
     
         <div class="container">
             <form id="contactForm" style="height:100%">
-                <div class="sub-title">Personal Information</div>
+                <div class="sub-title">Osobne Informacije</div>
                 <div class="input-con">
                     <label for="name">Ime:</label>
                     <input class="input" type="text" name="name" id="name" required>
@@ -63,17 +63,17 @@
                     <input class="input" type="date" name="dateOfBirth" id="dateOfBirth" required>
                 </div>
 
-                <div class="sub-title">Location Information</div>
+                <div class="sub-title">Informacije o lokaciji</div>
                 <div class="input-con">
                     <label for="street">Ulica:</label>
                     <input class="input" type="text" name="street" id="street" required>
                 </div>
                 <div class="input-con">
                     <label for="postalCode">Poštanski broj:</label>
-                    <input class="input" type="number" name="postalCode" id="postalCode" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "5" required>
+                    <input class="input" type="number" name="postalCode" id="postalCode" maxlength = "5" required>
                 </div>
                 
-                <div class="sub-title">Contact Information</div>
+                <div class="sub-title">Kontakt Informacije</div>
                 <div class="input-con">
                     <label for="phoneNumber">Broj telefona:</label>
                     <div>
@@ -83,7 +83,7 @@
                             <option value="099">099</option>
                         </select>
                         
-                        <input class="input" type="number" name="phoneNumber" id="phoneNumber" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "7" required>
+                        <input class="input" type="number" name="phoneNumber" id="phoneNumber" maxlength="7" required>
                     </div>
                 </div>
 

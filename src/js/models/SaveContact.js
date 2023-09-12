@@ -65,3 +65,10 @@ export const limitDate = (date) => {
 
     document.querySelector(date).setAttribute("max", maxDate);
 };
+
+//* Limiting input length
+export const limitInputLength = (input) => {
+    if (input.value.length > input.maxLength) {
+    input.value = input.value.slice(0, input.maxLength);
+    }
+}
