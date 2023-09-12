@@ -3,7 +3,8 @@
 .navbarm {
     position: fixed;
     background-color: $pastel-red;
-    border-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
     transition: width 600ms ease;
     overflow: hidden;
     z-index: 2;
@@ -42,7 +43,7 @@
 
     &:hover {
         filter: grayscale(0%) opacity(1);
-        background: $orange;
+        background: #A66E6C;
         border-left: 4px solid $white-text;
     }
 }
@@ -97,6 +98,10 @@ main {
     margin-left: 0rem;
     width: 30px;
     height: 30px;
+}
+
+.nav-linkm:hover {
+        border-left: none;
 }
 }
 

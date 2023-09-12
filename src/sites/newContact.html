@@ -44,7 +44,9 @@
         </ul>
     </nav>
 
+    
     <div class="title">Novi Kontakt</div>
+    
         <div class="container">
             <form id="contactForm" style="height:100%">
                 <div class="sub-title">Personal Information</div>
@@ -80,23 +82,17 @@
                             <option value="098">098</option>
                             <option value="099">099</option>
                         </select>
-                        <!-- MAX. 5 numbers -->
+                        
                         <input class="input" type="number" name="phoneNumber" id="phoneNumber" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "7" required>
                     </div>
                 </div>
 
                 <div class="input-con">
-                    <input type="reset" value="Odustani" name="reset" id="reset" class="btn-gray">
+                    <input type="reset" value="Obriši" name="reset" id="reset" class="btn-gray">
                     <input type="submit" value="Spremi" name="submit" id="submit" class="btn-orange">
                 </div>
             </form> 
         </div>
+
 </body>
-<!-- <div class="popup" id="popup">
-    <div class="popup-title">Potvrdi brisanje kontakta</div>
-    <div class="popup-button-container">
-        <button class="btn-orange">Obriši</button>
-        <button class="btn-gray">Odustani</button>
-    </div>
-</div> -->
 </html>

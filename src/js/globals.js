@@ -1,4 +1,4 @@
-//* Globalna funkcija za dohvacanje podataka iz local storage-a 
+//* Global function for getting contacts from local storage
 export const getContacts = () => {
     const existingContacts = localStorage.getItem("contacts");
 
@@ -7,7 +7,7 @@ export const getContacts = () => {
     if (existingContacts) {
         existingContactsArray = JSON.parse(existingContacts);
 
-        // U slucaju da nema podataka u local storage-u, kreiramo prazan array
+        // No data, set empty array
         if (!Array.isArray(existingContactsArray)) {
             existingContactsArray = [];
         }

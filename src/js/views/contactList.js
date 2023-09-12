@@ -34,7 +34,7 @@ export const renderContact = () => {
                         target="a.btn"
                         trigger="loop-on-hover"
                         delay="500"
-                        colors="primary:#F89B3E">
+                        colors="primary:#D88F8C">
                     </lord-icon>
                 </a>
             </td>
@@ -58,15 +58,43 @@ export const rowHighlight = () => {
         
         // Select the first element with the specified name attribute
         const element = document.querySelector(`[name="${id}"]`);
+        const snackbar = document.querySelector("#snackbar");
 
         if (element) {
             // Add the "highlight" class to the selected element
             element.classList.add("highlight");
+            snackbar.classList.add("hidden");
 
             // Set a timeout to remove the "highlight" class after 3 seconds
             setTimeout(() => {
                 element.classList.remove("highlight");
+                snackbar.classList.remove("hidden");
             }, 3000);
+        }
+    }
+};
+
+export const rowHighlight2 = () => {
+    if (new URLSearchParams(window.location.search).has("hl")) {
+
+        const id = new URLSearchParams(window.location.search).get("hl");
+        
+        // Select the first element with the specified name attribute
+        const element = document.querySelector(`[name="${id}"]`);
+        const snackbar = document.querySelector("#snackbar");
+
+        if (element) {
+            // Add the "highlight" class to the selected elemen
+            setTimeout(() => {
+                element.classList.add("highlight");
+                snackbar.classList.add("hidden");
+                setTimeout(() => {
+                    element.classList.remove("highlight");
+                    snackbar.classList.remove("hidden");
+                }, 1000);
+            }, 1000);
+
+
         }
     }
 };
@@ -88,12 +116,13 @@ export const popup = (id) => {
     <div class="popup" id="popup">
             <div class="popup-title">Potvrdi brisanje kontakta id. ${id}</div>
             <div class="popup-button-container">
-                <a href="?delid=${id}" class="btn-orange">Obriši</a>
                 <a href="../" class="btn-gray">Odustani</a>
+                <a href="?delid=${id}" class="btn-orange">Obriši</a>
             </div>
         </div>
     `;
-    document.querySelector("body").insertAdjacentHTML("beforeend", markup);
+    document.querySelector("#blur").classList.add("active");
+    document.querySelector("body").insertAdjacentHTML("beforebegin", markup);
 };
 
 //* Delete contact 

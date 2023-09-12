@@ -39,12 +39,20 @@ export const saveToStorage = (contact) => {
 };
 
 //* Create unique ID
-//! Provjeriti zasto radi bez return-a  
 export const createUniqueID = (query) => {
     if(!query.id){
         query.id = uniqid();
     }
 };
+
+// export const createUniqueID2 = (query) => {
+//     if(!query.id){
+//         const timestamp = Date.now();
+//         const randomString = Math.random().toString(36).substring(2, 5);
+        
+//         query.id = timestamp + randomString;
+//     }
+// };
 
 //* Limit date
 export const limitDate = (date) => {

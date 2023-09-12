@@ -1,5 +1,5 @@
 .btn-orange {
-  background-color: #f5a962;
+  background-color: #D88F8C;
   color: #ececec;
   border: none;
   border-radius: 100px;
@@ -36,7 +36,7 @@
 }
 
 .popup-title {
-  font-size: 30px;
+  font-size: 20px;
   color: #5B5B5B;
   margin-bottom: 20px;
 }
@@ -51,7 +51,8 @@
 .navbarm {
   position: fixed;
   background-color: #d88f8c;
-  border-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
   transition: width 600ms ease;
   overflow: hidden;
   z-index: 2;
@@ -90,7 +91,7 @@
 }
 .nav-linkm:hover {
   filter: grayscale(0%) opacity(1);
-  background: #f5a962;
+  background: #A66E6C;
   border-left: 4px solid #ececec;
 }
 
@@ -137,6 +138,9 @@
     width: 30px;
     height: 30px;
   }
+  .nav-linkm:hover {
+    border-left: none;
+  }
 }
 /* Large screens */
 @media only screen and (min-width: 600px) {
@@ -159,7 +163,7 @@
   }
 }
 .btn-orange {
-  background-color: #f5a962;
+  background-color: #D88F8C;
   color: #ececec;
   border: none;
   border-radius: 100px;
@@ -196,7 +200,7 @@
 }
 
 .popup-title {
-  font-size: 30px;
+  font-size: 20px;
   color: #5B5B5B;
   margin-bottom: 20px;
 }
@@ -251,7 +255,7 @@ input[type=number] {
   margin: auto;
   margin-top: 50px;
   font-size: 40px;
-  color: #ececec;
+  color: #5B5B5B;
   width: 50%;
 }
 
@@ -301,7 +305,7 @@ input[type=number] {
 }
 
 .input:focus {
-  outline: 1px solid #f5a962;
+  outline: 1px solid #A66E6C;
 }
 
 .input-disabled {
@@ -314,7 +318,7 @@ input[type=number] {
 @media only screen and (max-width: 600px) {
   .title {
     margin-left: 20px;
-    width: 100%;
+    width: auto;
   }
   .sub-title {
     font-size: 20px;

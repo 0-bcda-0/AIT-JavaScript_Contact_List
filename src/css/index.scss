@@ -6,7 +6,7 @@
     margin-left: 10%;
     margin-top: 50px;
     font-size: 40px;
-    color: $white-text;
+    color: $black-text;
     width: 200px;
 }
 
@@ -61,6 +61,39 @@ th, td{
     background-color: rgba($color: #d88f8c, $alpha: 0.5);
 }
 
+#clickableRow:hover{
+    background-color: rgba($color: $transparent, $alpha: 0.5);
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#blur.active{
+    filter: blur(3px);
+    pointer-events: none;
+    user-select: none;
+    --webkit-user-select: none;
+}
+
+#snackbar {
+    visibility: hidden;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #A66E6C;
+    color: #fff;
+    padding: 16px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    text-align: center;
+}
+
+.hidden {
+    visibility: visible !important;
+    // color: red !important;
+}
+
 // ------------------ RESPONSIVE ------------------
 
 @media only screen and (max-width: 600px) {
@@ -102,5 +135,10 @@ th, td{
         flex-direction: row;
         justify-content: start;
         margin-top: 0;
+    }
+
+    #snackbar {
+        top: 10px;
+        bottom: auto;
     }
 }
